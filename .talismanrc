@@ -1,0 +1,6 @@
+fileignoreconfig:
+
+- filename: tasks/main.yml
+  allowed_patterns:
+    - >
+      MAIL_PASSWORD: "{{ s_nail_mail_password }}"

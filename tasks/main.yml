@@ -1,0 +1,17 @@
+---
+
+- name: Ensure s-nail
+  community.docker.docker_container:
+    name:           s.nail
+    image:          "lwith/s-nail:latest"
+    env:
+      SMTP_SERVER:   "{{ s_nail_smtp_server }}"
+      SMTP_PORT:     "{{ s_nail_smtp_port }}"
+      MAIL_FROM:     "{{ s_nail_mail_from }}"
+      MAIL_USER:     "{{ s_nail_mail_user }}"
+      MAIL_PASSWORD: "{{ s_nail_mail_password }}"
+    command: tail -f /dev/null
+    restart_policy: always
+    container_default_behavior: compatibility
+
+...
