@@ -2,7 +2,7 @@
 
 - name: Ensure s-nail
   community.docker.docker_container:
-    name:           s.nail
+    name:           s-nail
     image:          "lwith/s-nail:latest"
     env:
       SMTP_SERVER:   "{{ s_nail_smtp_server }}"
