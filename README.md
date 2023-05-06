@@ -2,10 +2,11 @@
 
 install s-nail with docker
 
-## Collection dependencies
+## Dependencies
 
-The role depends on the collection community.docker.
-Note that this also requires installation of the python library `docker`.
+The role depends on the
+
+- ansible role docker_container
 
 ## Role Variables
 
