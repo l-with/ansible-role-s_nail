@@ -13,6 +13,6 @@
       - "SMTP_PORT={{ s_nail_smtp_port }}"
       - "MAIL_FROM={{ s_nail_mail_from }}"
       - "MAIL_USER={{ s_nail_mail_user }}"
-      - "MAIL_PASSWORD{{ s_nail_mail_password }}"
+      - "MAIL_PASSWORD={{ s_nail_mail_password }}"
 
 ...
