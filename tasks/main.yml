@@ -9,10 +9,10 @@
     docker_container_command:        tail -f /dev/null
     docker_container_restart_policy: always
     docker_container_env:
-      - "SMTP_SERVER={{ s_nail_smtp_server }}"
-      - "SMTP_PORT={{ s_nail_smtp_port }}"
-      - "MAIL_FROM={{ s_nail_mail_from }}"
-      - "MAIL_USER={{ s_nail_mail_user }}"
-      - "MAIL_PASSWORD={{ s_nail_mail_password }}"
+      - "SMTP_SERVER='{{ s_nail_smtp_server }}'"
+      - "SMTP_PORT='{{ s_nail_smtp_port }}'"
+      - "MAIL_FROM='{{ s_nail_mail_from }}'"
+      - "MAIL_USER='{{ s_nail_mail_user }}'"
+      - "MAIL_PASSWORD='{{ s_nail_mail_password }}'"
 
 ...
